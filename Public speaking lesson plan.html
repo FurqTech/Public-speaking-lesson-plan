@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .sh {
+        background-color: aqua;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgb(56, 56, 56);
+        color: white;
+        padding: 30px;
+        width: 1250px;
+        text-align: center;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .carousel-inner {
+        background: linear-gradient(rgb(185, 185, 185), white);
+        margin: 10px;
+        height: 490px;
+        width: 1300px;
+    }
+
+    .carousel-item {
+        background: linear-gradient(rgb(185, 185, 185), white);
+        margin: 10px;
+        height: 490px;
+        width: 1300px;
+    }
+
+    #carouselExample {
+        height: 700px;
+    }
+
+    h1 {
+        background-color: aqua;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgb(56, 56, 56);
+        color: white;
+        padding: 30px;
+        width: 1300px;
+        text-align: center;
+    }
+
+    #Main {
+        background: linear-gradient(rgb(209, 209, 209), grey);
+        height: 400px;
+        width: 1300px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        border-radius: 10px;
+        background-color: aqua;
+        color: white;
+        padding: 10px;
+    }
+
+    .chapters {
+        display: none;
+    }
+
+    .carousel-control-prev {
+        background-color: aqua;
+        color: white;
+        border-radius: 20px;
+        opacity: 0;
+    }
+
+    .carousel-control-next {
+        background-color: aqua;
+        color: white;
+        border-radius: 20px;
+        opacity: 0;
+    }
+
+    .carousel-inner {
+        border-radius: 30px;
+        height: 700px;
+    }
+
+    .carousel-item {
+        padding: 10px;
+        height: 700px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #w {
+        width: 600px;
+    }
+</style>
+
+<body class='d-flex flex-column justify-content-center align-items-center p-3 gap-1'>
+    <section id='intro'>
+        <h1>Public speaking</h1>
+        <div id='Main'>
+            <h3>In this website, you'll learn public speaking. This is a digital book I specially developed for the
+                people who
+                really need confidence-building.</h3>
+            <button id='start' onclick='start()' onmouseover="change1()" onmouseleave='change2()'>Start</button>
+        </div>
+    </section>
+    <section id='chap1' class='chapters'>
+        <h1>Public speaking</h1>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h1 class='sh'>Page 1/1</h1>
+                    <h1 class='sh'>Chapter 1</h1>
+                    <h3 class='text-center m-5'>Welcome!!! You must be here for confidence building. This is the perfect
+                        platform for you. We'll start the lesson. Our first chapter is debating. Move the mouse to the
+                        left and right of the screen to make the page changing buttons appear.</h3>
+                </div>
+                <div class="carousel-item">
+                    <h1 class='sh'>What is debating?</h1>
+                    <h3 class='text-center m-5'>Debating is basically a fight about a specific topic. you must have seen
+                        this kind of thing over the news where different people including the news reporter are talking
+                        about a specific topic. Yes, that is also debating. There's an example of debate. Suppose you
+                        are talking about the topic smartphones should be allowed in school. Now you'll have to decide
+                        that are you going against it or are you going for it. And if another person chooses opposite to
+                        yours than you'll have to defend your opinion using reasons.</h3>
+                </div>
+                <div class="carousel-item">
+                    <h1 class='sh'>The way to debate</h1>
+                    <h3 class='text-center'>The way to debate must seem simple but it won't be simple. So if you're in a
+                        debate conversation already then you'll need to defend your opinion but if you want to start a
+                        whole new debate conversation then you'll need to follow the given structure without saying any
+                        "Uh" or "Um". And you'll need to have full confidence and flow to talk in you. If you talk with
+                        flow, then you won't be interrupted by "Uh" or "Umm". So the structure to do a debate
+                        conversation is given in the next page.</h3>
+                </div>
+                <div id='stru' class="carousel-item">
+                    <h1 class='sh'>Structure of debate</h1>
+                    <h3 class='text-center'>So before starting your debate conversation, You'll need to start with:</h3>
+                    <div class='d-flex flex-row justify-content-center alignm-items-center'>
+                        <div id='w' class='d-flex flex-column justify-content-center aling-items-center'>
+                            <h3 class='text-center'>1: Greetings</h3>
+                            <p>You'll need to greet someone you want to talk to about a specific topic.</p>
+                            <h3 class='text-center'>2: Introduction</h3>
+                            <p>Give your introduction after greeting that person</p>
+                            <h3 class='text-center'>3: Topic and opinion</h3>
+                            <p>Tell about your topic and after that tell your opinion about it.</p>
+                            <h3 class='text-center'>4: Reason</h3>
+                            <p>Then you'll need to tell the reason for you having that specific opinion to defend your
+                                opinion.</p>
+                            <h3 class='text-center'>5: Summary</h3>
+                            <p>You'll also need to give a small summary so that people can understand that why do you
+                                have that specific opinion, meaning that you'll need to tell a small anecdote of your
+                                life
+                                It's your choice. If you
+                                have an anecdote related to your opinion, you can summarize it.</p>
+                        </div>
+                        <div id='w' class='d-flex flex-column'>
+                            <h3 class='text-center'>6: Thank the person you are talking to.</h3>
+                            <p>You'll have to thank the person you were having a debate conversation with.</p>
+                            <h3 class='text-center'>7: Stop</h3>
+                            <p>That's it. You can stop at the end of the conversation</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <button id='prev' onmouseover='chpb()' onmouseleave='chpb2()' class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span>Previous</span>
+            </button>
+            <button id='next' onmouseover='chnb()' onmouseleave='chnb2()' class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span>Next</span>
+            </button>
+        </div>
+
+    </section>
+    <script>
+        function start() {
+            document.getElementById('intro').style.display = 'None'
+            document.getElementById('chap1').style.display = 'block'
+        }
+        function chpb() {
+            document.getElementById('prev').style.opacity = 1
+        }
+        function chpb2() {
+            document.getElementById('prev').style.opacity = 0
+        }
+        function chnb() {
+            document.getElementById('next').style.opacity = 1
+
+        }
+        function chnb2() {
+            document.getElementById('next').style.opacity = 0
+        }
+        function change1() {
+            document.getElementById('start').style.color = 'aqua'
+            document.getElementById('start').style.backgroundColor = 'white'
+        }
+        function change2() {
+            document.getElementById('start').style.color = 'white'
+            document.getElementById('start').style.backgroundColor = 'aqua'
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
