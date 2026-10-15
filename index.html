@@ -9,10 +9,11 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <style>
-    #chapchan{
-        width:1250px;
-        text-align:center;
+    #chapchan {
+        width: 1250px;
+        text-align: center;
     }
+
     .sh {
         background-color: aqua;
         border-radius: 20px;
@@ -208,31 +209,60 @@
         <div id="carouselExample2" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h1 class='sh'>Page 1/4</h1>
+                    <h1 class='sh'>Page 1/6</h1>
                     <h1 class='sh'>Chapter 2</h1>
-                    <h3 class='text-center m-5'>Alright. Hoping that you have understood the concept of debate we'll move on to our next chapter. This chapter will be a type of excercize let's say. In this chapter, you'll find your natural voice for public speaking.</h3>
+                    <h3 class='text-center m-5'>Alright. Hoping that you have understood the concept of debate we'll
+                        move on to our next chapter. This chapter will be a type of excercize let's say. In this
+                        chapter, you'll find your natural voice for public speaking.</h3>
                 </div>
                 <div class="carousel-item">
-                    <h1 class='sh'>Page 2/4</h1>
+                    <h1 class='sh'>Page 2/6</h1>
                     <h1 class='sh'>What a is voice?</h1>
-                    <h3 class='text-center m-5'>So let's start with the definition of voice. So the question is 'What is a voice?'. So a voice is the way of how you speak, in which volume you speak. There are three types of voice. The types are given on the next page</h3>
+                    <h3 class='text-center m-5'>So let's start with the definition of voice. So the question is 'What is
+                        a voice?'. So a voice is the way of how you speak, in which volume you speak. There are three
+                        types of voice. The types are given on the next page</h3>
                 </div>
                 <div class="carousel-item">
-                    <h1 class='sh'>Page 3/4</h1>
+                    <h1 class='sh'>Page 3/6</h1>
                     <h1 class='sh'>Types of voices</h1>
                     <h3 class='text-center'>Loud voice</h3>
-                    <p>This is the voice that is used mostly in a presentation you know when you'll have to gicve a presentation in front of thousands of people. You'll need your voice to reach out to every single person.</p>
+                    <p>This is the voice that is used mostly in a presentation you know when you'll have to gicve a
+                        presentation in front of thousands of people. You'll need your voice to reach out to every
+                        single person.</p>
                     <h3 class='text-center'>Normal voice</h3>
-                    <p>This is the normal type of voicce that you mostly use while a discussion or talking to a friend like talking to someone where there is no need for loud voice.</p>
+                    <p>This is the normal type of voicce that you mostly use while a discussion or talking to a friend
+                        like talking to someone where there is no need for loud voice.</p>
                     <h3 class='text-center'>Low voice</h3>
                     <p>Low voice is a voice that is mostly used in private or while wispering.</p>
                 </div>
                 <div id='stru2' class="carousel-item">
-                    <h1 class='sh'>Page 4/4</h1>
-                    <h1 class='sh'>What is Pace</h1>
-                    <h3 class='text-center'>Pace is the speed at which you talk. Pace is very important in a conversation.</h3>
-                    
-                    <button id = chapchan onclick='chap2()'>Next</button>
+                    <h1 class='sh'>Page 4/6</h1>
+                    <h1 class='sh'>What is Pace?</h1>
+                    <h3 class='text-center'>Pace is how fast or slow you speak. Pace is very important in a
+                        conversation. Pace also controls the way you speak.Without pace, whatever sentence you'll say
+                        even the perfect and most performative voice will not suite.</h3>
+
+                </div>
+                <div id='stru2' class="carousel-item">
+                    <h1 class='sh'>Page 5/6</h1>
+                    <h1 class='sh'>What is a Tone?</h1>
+                    <h3 class='text-center'>Tone is the way you speak meaning that the volume you speak at. tone is also
+                        very important in speaking, especially to express emotes or expressions according to the topic
+                        you are talking about. The types of tones are given in the next page.</h3>
+                </div>
+                <div id='stru2' class="carousel-item">
+                    <h1 class='sh'>Page 6/6</h1>
+                    <h1 class='sh'>Types of tone</h1>
+                    <h3 class='text-center'>There are different types of tones.</h3>
+                    <h3 class='text-center'>Warm</h3>
+                    <p>This is a tone that is used in speaking to someone formally. Mostly respectful and kind way of speaking to someone.</p>
+                    <h3 class='text-center'>Furious</h3>
+                    <p>This is a tone used to speak to someone in anger when you are very furious and angry.</p>
+                    <h3 class='text-center'>Sad</h3>
+                    <p>This tone is used to talk to someone if you are talking about a sad topic or a sad incident.</p>
+                    <h3 class='text-center'>Curious</h3>
+                    <p>This is a tone in which you talk in curiosity like you are too curious about a topic or an answer to your question.</p>
+                    <button id='chapchan' onclick='chap3()'>Next</button>
                 </div>
             </div>
             <button id='prev2' onmouseover='chpb()' onmouseleave='chpb2()' class="carousel-control-prev" type="button"
@@ -246,7 +276,7 @@
                 <span>Next</span>
             </button>
         </div>
-    
+
     </section>
     <script>
         function start() {
@@ -278,9 +308,13 @@
             document.getElementById('start').style.color = 'white'
             document.getElementById('start').style.backgroundColor = 'aqua'
         }
-        function chap2(){
+        function chap2() {
             document.getElementById('chap1').style.display = 'none'
             document.getElementById('chap2').style.display = 'block'
+        }
+        function chap3() {
+            document.getElementById('chap2').style.display = 'none'
+            document.getElementById('chap3').style.display = 'block'
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
